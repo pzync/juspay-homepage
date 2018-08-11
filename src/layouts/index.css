@@ -22,8 +22,8 @@ a {
 
 .HeroGroup {
   margin: 0 auto;
-  width: 720px;
-  padding: 220px 0;
+  max-width: 720px;
+  padding: 240px 40px;
   text-align: center;
 }
 
@@ -36,12 +36,12 @@ a {
 }
 
 .Hero p {
-  width: 680px;
+  max-width: 680px;
+  padding: 0 auto;
   font-size: 22px;
   color: #001020;
   line-height: 1.6;
-  margin-bottom: 54px;
-  margin-top: 32px;
+  margin: 32px 30px 54px 30px;
 }
 
 .Hero a {
@@ -52,4 +52,19 @@ a {
   padding: 14px 60px;
   margin: 40px auto;
   border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50,50,100,.1), 0 1px 3px rgba(0,0,0,.1);
+}
+
+@media (max-width: 640px) {
+  .HeroGroup {
+    padding: 220px 20px;
+  }
+
+  .Hero h1 {
+    font-size: 40px;
+  }
+
+  .Hero p {
+    font-size: 18px;
+  }
 }

@@ -1,0 +1,55 @@
+.Header {
+  position: fixed;
+  width: 100%;
+  padding: 32px 0;
+  z-index: 100;
+}
+
+.HeaderGroup {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+.Header img {
+  padding-right: 120px;
+}
+
+.Header a {
+  color: #304050;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.Header a:hover {
+  font-weight: 500;
+  color: #0033ff;
+}
+
+@media (max-width: 640px) {
+  .Header {
+    padding: 24px;
+  }
+
+  .HeaderGroup {
+    grid-template-columns: 2fr 1fr;
+    justify-items: left;
+  }
+
+  .Header a:nth-child(3){
+    display: none;
+  }
+
+  .Header a:nth-child(4){
+    display: none;
+  }
+
+  .Header a:nth-child(5){
+    display: none;
+  }
+
+}
+
