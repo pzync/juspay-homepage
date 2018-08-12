@@ -25,12 +25,14 @@ a {
   max-width: 720px;
   padding: 240px 40px;
   text-align: center;
+  opacity: 0;
+  animation: HeroAnimation 3s forwards cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .Hero h1 {
   margin: 20px auto;
   color: #102030;
-  font-size: 64px;
+  font-size: 62px;
   line-height: 1.1;
   font-weight: 900;
 }
@@ -41,18 +43,26 @@ a {
   font-size: 22px;
   color: #001020;
   line-height: 1.6;
-  margin: 32px 30px 54px 30px;
+  margin: 32px 30px 48px 30px;
 }
 
 .Hero a {
+  display: inline-block; 
+  /*this is because the transform css property, used below in hover state, does not work with html link <a> element. ref: https://stackoverflow.com/questions/29667859/transform-css-property-doesnt-work-with-a-element*/
   color: white;
   font-size: 18px;
   font-weight: 600;
   background-color: #0033ff;
   padding: 14px 60px;
-  margin: 40px auto;
+  margin: 0px auto;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(50,50,100,.1), 0 1px 3px rgba(0,0,0,.1);
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.Hero a:hover {
+  box-shadow: 0 8px 10px rgba(50,50,100,.1), 0 2px 4px rgba(0,0,0,.1);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 640px) {
@@ -66,5 +76,17 @@ a {
 
   .Hero p {
     font-size: 18px;
+  }
+}
+
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(1.15);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
