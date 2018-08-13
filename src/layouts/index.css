@@ -100,6 +100,8 @@ a {
   align-items: center;
   justify-items: center;
   cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .ClientLogos img {
@@ -114,5 +116,41 @@ a {
 @media (max-width: 640px) {
   .ClientLogos {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.ProductSection {
+  background: #f4f9fd;
+}
+
+.ProductSection h2 {
+  margin: 120px 20px 60px;
+  font-size: 54px;
+  font-weight: 800;
+  text-align: center;
+  color: #102030;
+  padding-top: 72px;
+  line-height: 1.2;
+}
+
+@media (max-width: 640px) {
+  .ProductSection h2 {
+    font-size: 32px;
+  }
+}
+
+.CardGroup {
+  max-width: 1080px;
+  margin: 72px auto 100px;
+  padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+@media (max-width: 840px) {
+  .CardGroup {
+    grid-template-columns: 1fr;
+    grid-row-gap: 54px;
   }
 }

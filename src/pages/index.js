@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import ProductCard from '../components/ProductCard';
 
 const IndexPage = () => (
   <div>
@@ -19,6 +20,23 @@ const IndexPage = () => (
       <img src = {require('../images/myntra.png')} width= "40"/>
       <img src = {require('../images/snapdeal.png')} height= "40"/>
       <img src = {require('../images/yatra.png')} height= "40"/>
+    </div>
+    <div className = "ProductSection">
+      <h2>Products that handle<br />end-to-end payments</h2>
+      <div className = "CardGroup">
+        <ProductCard 
+          image = {require('../images/godel.png')}
+          title = "Juspay Safe"
+          text = "World’s first mobile payments browser for secure 1-click experience. Trusted by MakeMyTrip, Amazon, Airtel, Uber, Swiggy and many more."
+          cta = "Learn more >"
+        />
+        <ProductCard 
+          image = {require('../images/checkout.png')}
+          title = "Express Checkout"
+          text = "PCI-DSS compliant seamless checkout layer integrated with 20+ payment gateways. Trusted by Swiggy, Grofers, Zoomcar and many more."
+          cta = "Learn more >"
+        />
+      </div>
     </div>
   </div>
 )
