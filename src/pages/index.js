@@ -10,6 +10,16 @@ const IndexPage = () => (
         <Link to="/page-2/">Get Started</Link>
       </div>
     </div>
+    <div className = "ClientLogos">
+      <img src = {require('../images/amazon.svg')} height= "40"/>
+      <img src = {require('../images/airtel.svg')} height = "36"/>
+      <img src = {require('../images/flipkart.jpeg')} width= "36"/>
+      <img src = {require('../images/swiggy.svg')} height= "40"/>
+      <img src = {require('../images/uber.svg')} height= "36"/>
+      <img src = {require('../images/myntra.png')} width= "40"/>
+      <img src = {require('../images/snapdeal.png')} height= "40"/>
+      <img src = {require('../images/yatra.png')} height= "40"/>
+    </div>
   </div>
 )
 

@@ -90,3 +90,19 @@ a {
     transform: scale(1);
   }
 }
+
+.ClientLogos {
+  max-width: 840px;
+  margin: 96px auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+@media (max-width: 640px) {
+  .ClientLogos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
