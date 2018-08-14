@@ -22,7 +22,7 @@ const IndexPage = () => (
       <img src = {require('../images/yatra.png')} height= "40"/>
     </div>
     <div className = "ProductSection">
-      <h2>Products that handle<br />end-to-end payments</h2>
+      <h2>Payment products that<br />scale to 'massive'</h2>
       <div className = "CardGroup">
         <ProductCard 
           image = {require('../images/godel.png')}
