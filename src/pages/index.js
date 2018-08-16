@@ -41,7 +41,7 @@ const IndexPage = () => (
     <div className = "PlatformSection">
       <img src = {require('../images/platform.png')} />
       <div className = "PlatformDesc">
-        <h2>Enterprise payment solutions</h2>
+        <h2>Enterprise solutions</h2>
         <p>A suite of customized, end-to-end solutions to take care of all your payment requirements. Juspay's proprietary Presto platform allows us to execute quickly and scale globally. Plus custom integrations and 24/7 support.</p>
         <Link to="/custom/">Contact us</Link>
       </div>
