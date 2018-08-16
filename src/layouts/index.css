@@ -129,7 +129,7 @@ a {
   font-weight: 800;
   text-align: center;
   color: #102030;
-  padding-top: 72px;
+  padding-top: 96px;
   line-height: 1.2;
 }
 
@@ -153,4 +153,70 @@ a {
     grid-template-columns: 1fr;
     grid-row-gap: 54px;
   }
+}
+
+.PlatformSection {
+  margin: 0 auto;
+  max-width: 1080px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  justify-items: center;
+  padding-bottom: 120px;
+  padding-top: 36px;
+}
+
+@media (max-width: 840px) {
+  .PlatformSection {
+    grid-template-columns: 1fr;
+  }
+}
+
+.PlatformDesc {
+  max-width: 500px;
+  align-self: center;
+  /* text-align: center; */
+}
+
+.PlatformSection img {
+  width: 100%;
+  max-width: 420px;
+  margin-top: 32px;
+  align-self: center;
+}
+
+.PlatformDesc h2 {
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #102030;
+  margin-bottom: 32px;
+  margin-top: 20px;
+}
+
+.PlatformDesc p {
+  font-size: 18px;
+  color: #444444;
+  line-height: 1.6;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.PlatformDesc a {
+  display: inline-block;
+  color: #0033ff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 60px;
+  border: 2px solid #0033ff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50,50,100,.1), 0 1px 3px rgba(0,0,0,.1);
+  transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.PlatformDesc a:hover {
+  box-shadow: 0 8px 10px rgba(50,50,100,.1), 0 2px 4px rgba(0,0,0,.1);
+  transform: translateY(-2px);
+  color: white;
+  background-color: #0033ff;
 }

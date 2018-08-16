@@ -12,6 +12,21 @@
   backdrop-filter: blur(8px);
 }
 
+.HeaderScrolled a:nth-child(5) {
+  font-weight: 600;
+  color: white;
+  background: #0033ff;
+  padding: 8px 24px;
+  margin: 0px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50,50,100,.1), 0 1px 3px rgba(0,0,0,.1);
+  transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.HeaderScrolled a:nth-child(5):hover {
+  color: white;
+}
+
 .HeaderGroup {
   max-width: 1000px;
   margin: 0 auto;
