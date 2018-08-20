@@ -14,7 +14,7 @@ a {
 }
 
 .Hero {
-  background: url('../images/heroNew.svg');
+  background: url('../images/hero-bg.jpg');
   height: 680px;
   background-size: cover;
   background-position: center;
