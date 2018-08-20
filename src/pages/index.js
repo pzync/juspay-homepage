@@ -13,16 +13,6 @@ const IndexPage = () => (
         <Link to="/page-2/">Get Started</Link>
       </div>
     </div>
-    <div className = "ClientLogos">
-      <img src = {require('../images/amazon.svg')} height= "40"/>
-      <img src = {require('../images/airtel.svg')} height = "36"/>
-      <img src = {require('../images/flipkart.jpeg')} width= "36"/>
-      <img src = {require('../images/swiggy.svg')} height= "40"/>
-      <img src = {require('../images/uber.svg')} height= "36"/>
-      <img src = {require('../images/myntra.png')} width= "40"/>
-      <img src = {require('../images/snapdeal.png')} height= "40"/>
-      <img src = {require('../images/yatra.png')} height= "40"/>
-    </div>
     <div className = "ProductSection">
       <h2>Payment products that<br />scale to 'massive'</h2>
       <div className = "CardGroup">
@@ -67,6 +57,24 @@ const IndexPage = () => (
         />
       </div>
       <div className = "WaveBottom"><Wave /></div>
+    </div>
+    <div className = "CTA">
+      <div className = "ClientLogos">
+        <img src = {require('../images/amazon.svg')} height= "40"/>
+        <img src = {require('../images/airtel.svg')} height = "36"/>
+        <img src = {require('../images/flipkart.jpeg')} width= "36"/>
+        <img src = {require('../images/swiggy.svg')} height= "40"/>
+        <img src = {require('../images/uber.svg')} height= "36"/>
+        <img src = {require('../images/myntra.png')} width= "40"/>
+        <img src = {require('../images/snapdeal.png')} height= "40"/>
+        <img src = {require('../images/yatra.png')} height= "40"/>
+      </div>
+      <h2>Most leading companies use Juspay products.</h2>
+      <p>Amazon. Flipkart. Myntra. Snapdeal. Swiggy. Uber. Yatra. Airtel. And 400+ other online businesses trust Juspay for powering their payment experience.</p>
+      <Link to="/custom/">Get Started</Link>
+    </div>
+    <div className = "Footer">
+      <p>Made in Namma Bengaluru. Powered by Pure Functions :)</p>
     </div>
   </div>
 )
