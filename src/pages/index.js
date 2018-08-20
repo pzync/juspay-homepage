@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import ProductCard from '../components/ProductCard';
+import Stat from '../components/Stat';
+import Wave from '../components/Wave';
 
 const IndexPage = () => (
   <div>
@@ -45,6 +47,26 @@ const IndexPage = () => (
         <p>A suite of customized, end-to-end solutions to take care of all your payment requirements. Juspay's proprietary Presto platform allows us to execute quickly and scale globally. Plus custom integrations and 24/7 support.</p>
         <Link to="/custom/">Contact us</Link>
       </div>
+    </div>
+    <div className = "SummarySec">
+      <div className = "SummaryGroup">
+        <Stat 
+          number = "1.4"
+          scale = "Mn"
+          text = "number of transactions processed every day"
+        />
+        <Stat 
+          number = "100"
+          scale = "Mn"
+          text = "number of devices Juspay SDK is present on"
+        />
+        <Stat 
+          number = "1.3"
+          scale = "Bn"
+          text = "number of transactions processed so far"
+        />
+      </div>
+      <div className = "WaveBottom"><Wave /></div>
     </div>
   </div>
 )

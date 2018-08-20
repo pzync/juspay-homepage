@@ -238,3 +238,33 @@ a {
   color: white;
   background-color: #0033ff;
 }
+
+.SummarySec {
+  position: relative;
+  background-image: linear-gradient(to bottom right, #0088ff, #0033ff);
+}
+
+.SummaryGroup {
+  width: 100%;
+  padding: 160px 0 240px 0;
+  /* background-image: linear-gradient(to bottom right, #0088ff, #0033ff); */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  /* background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJUlEQVQoU2P8//+/FKMJw1MGAoCRwfj/f0KKQPKjCvGGEtHBAwA8NBf1PnApcgAAAABJRU5ErkJggg==) repeat;  */
+  /* generated using patternify.com */
+}
+
+
+@media (max-width: 840px) {
+  .SummaryGroup {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+}
+
+.WaveBottom {
+  position: absolute;
+  width: 100%;
+  bottom: -6px;
+}
